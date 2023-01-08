@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  LanguageListViewControllerEx2.swift
 //  DelegationPattern
 //
-//  Created by Hager Elsayed on 04/01/2023.
+//  Created by Hager Elsayed on 08/01/2023.
 //
 
 import UIKit
 
-public class LanguagesListViewController: UIViewController {
+public class LanguageListViewControllerEx2: UIViewController {
     
     lazy var tableView: UITableView = {
         let tableview = UITableView(frame: .zero, style: .plain)
@@ -20,28 +20,18 @@ public class LanguagesListViewController: UIViewController {
         return tableview
     }()
     
-//    private let items = ["Swift", "React Native", "Flutter"]
-     let languageService = LanguageService()
-    var items = [String]()
+    private var items = [String]()
+    weak var languagePresenterable: LanguagePresenterable?
     public override func viewDidLoad() {
         super.viewDidLoad()
         setConstraints()
         self.view.backgroundColor = .white
-        languageService.languageLoader = self
-        languageService.fetchLanguages()
+        languagePresenterable?.viewDidLoad()
     }
-}
-
-extension LanguagesListViewController: LanguageLoader {
-    func didLanguagesLoaded(items: [String], with totalItems: Int) {
-        self.items = items
-    }
-    
-    
 }
 
 // MARK: Helper
-extension LanguagesListViewController {
+extension LanguageListViewControllerEx2 {
     func setConstraints() {
         view.addSubview(tableView)
         NSLayoutConstraint.activate([
@@ -53,8 +43,14 @@ extension LanguagesListViewController {
     }
 }
 
+extension LanguageListViewControllerEx2: LanguageDisplayable {
+    func display(items: [String], with totalItems: Int) {
+        self.items = items
+    }
+    
+}
 // MARK: - UITableViewDataSource
-extension LanguagesListViewController: UITableViewDataSource {
+extension LanguageListViewControllerEx2: UITableViewDataSource {
     public func tableView(_ tableView: UITableView,
                           cellForRowAt indexPath: IndexPath)
     -> UITableViewCell {
@@ -69,16 +65,24 @@ extension LanguagesListViewController: UITableViewDataSource {
     }
 }
 
-protocol LanguageLoader: AnyObject {
-    func didLanguagesLoaded(items: [String], with totalItems: Int)
-}
 
-final class LanguageService {
-    weak var languageLoader: LanguageLoader?
+final class LanguagesListPresenter {
+    
+    weak var languageDisplayable: LanguageDisplayable?
+    
+    init(languageDisplayable: LanguageDisplayable) {
+        self.languageDisplayable = languageDisplayable
+    }
     
     func fetchLanguages() {
-         let items = ["Swift", "React Native", "Flutter"]
-        languageLoader?.didLanguagesLoaded(items: items, with: items.count)
-
+        let items = ["Swift", "React Native", "Flutter"]
+        languageDisplayable?.display(items: items, with: items.count)
     }
+}
+
+extension LanguagesListPresenter: LanguagePresenterable {
+    func viewDidLoad() {
+        fetchLanguages()
+    }
+    
 }
