@@ -1,6 +1,8 @@
 # Design-Patterns
 
 ## Delegation Pattern
+## [ Delegation Pattern on YouTube]()
+[![](DelegationPattern/DelegationPattern/Resources/banner.png)]()
 its one of a <b>Behavioral Patterns</b> because it's all about objects communication[one-to-one] which consist of three parts:
 - <b>Delegating object:</b> It’s the object that has a delegate. The delegate is usually held as a weak property to avoid a retain cycle.
 - <b>Delegate protocol:</b> which defines the methods that the delegate should implement.
