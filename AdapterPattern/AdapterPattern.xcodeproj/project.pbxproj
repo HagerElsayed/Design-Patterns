@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0421D5CD296F097F00ADAD73 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0421D5CC296F097F00ADAD73 /* FirebaseAnalytics */; };
+		0421D5D1296F3F8D00ADAD73 /* AnalyticsEngineAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421D5D0296F3F8D00ADAD73 /* AnalyticsEngineAdapter.swift */; };
 		04ADE12C296DC18B007A8ADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADE12B296DC18B007A8ADE /* AppDelegate.swift */; };
 		04ADE12E296DC18B007A8ADE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADE12D296DC18B007A8ADE /* SceneDelegate.swift */; };
 		04ADE130296DC18B007A8ADE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADE12F296DC18B007A8ADE /* ViewController.swift */; };
@@ -19,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0421D5D0296F3F8D00ADAD73 /* AnalyticsEngineAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEngineAdapter.swift; sourceTree = "<group>"; };
 		04ADE128296DC18B007A8ADE /* AdapterPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdapterPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ADE12B296DC18B007A8ADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04ADE12D296DC18B007A8ADE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0421D5CD296F097F00ADAD73 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +70,7 @@
 				04ADE12B296DC18B007A8ADE /* AppDelegate.swift */,
 				04ADE12D296DC18B007A8ADE /* SceneDelegate.swift */,
 				04ADE12F296DC18B007A8ADE /* ViewController.swift */,
+				0421D5D0296F3F8D00ADAD73 /* AnalyticsEngineAdapter.swift */,
 				04ADE131296DC18B007A8ADE /* Main.storyboard */,
 				04ADE134296DC18D007A8ADE /* Assets.xcassets */,
 				04ADE136296DC18D007A8ADE /* LaunchScreen.storyboard */,
@@ -100,6 +105,9 @@
 			dependencies = (
 			);
 			name = AdapterPattern;
+			packageProductDependencies = (
+				0421D5CC296F097F00ADAD73 /* FirebaseAnalytics */,
+			);
 			productName = AdapterPattern;
 			productReference = 04ADE128296DC18B007A8ADE /* AdapterPattern.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 04ADE11F296DC18A007A8ADE;
+			packageReferences = (
+				0421D5CB296F097F00ADAD73 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 04ADE129296DC18B007A8ADE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04ADE130296DC18B007A8ADE /* ViewController.swift in Sources */,
+				0421D5D1296F3F8D00ADAD73 /* AnalyticsEngineAdapter.swift in Sources */,
 				04ADE12C296DC18B007A8ADE /* AppDelegate.swift in Sources */,
 				04ADE12E296DC18B007A8ADE /* SceneDelegate.swift in Sources */,
 			);
@@ -378,6 +390,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0421D5CB296F097F00ADAD73 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0421D5CC296F097F00ADAD73 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0421D5CB296F097F00ADAD73 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04ADE120296DC18A007A8ADE /* Project object */;
 }
