@@ -31,3 +31,31 @@ its one of a <b>Behavioral Patterns</b> which consist of four parts:
 <h6 align="left">UML Digram's Example:</h6>
 
 [![](AdapterPattern/AdapterPattern/Resources/AdapterPattern-example.png)]()
+```
+protocol Target {
+    func request()
+}
+
+class Adaptee {
+    func specificRequest() {
+        print("Specific request")
+    }
+}
+
+class Adapter: Target {
+    private let adaptee: Adaptee
+
+    init(adaptee: Adaptee) {
+        self.adaptee = adaptee
+    }
+
+    func request() {
+        adaptee.specificRequest()
+    }
+}
+
+let adaptee = Adaptee()
+let adapter = Adapter(adaptee: adaptee)
+
+adapter.request() // Prints "Specific request"
+```
