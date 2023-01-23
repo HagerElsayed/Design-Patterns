@@ -4,6 +4,14 @@
 ## [ Factory Pattern on YouTube]()
 [![](FactoryPattern.playground/Resources/FactoryPattern.png)]()
 
+its one of a <b>Creational Patterns</b> which consist of:
+- <b>Factory:</b> which creates objects.
+- <b>Protocol:</b> which defines the methods that the products should implement.
+- <b>Products:</b> the objects that are created
+
+<h6 align="left">UML Digram's Example:</h6>
+
+[![](FactoryPattern.playground/Resources/FactoryPatternExample.png)]()
 
 ## Delegation Pattern
 ## [ Delegation Pattern on YouTube](https://youtu.be/-rZIJxm8B0s)
