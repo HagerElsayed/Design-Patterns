@@ -1,5 +1,10 @@
 # Design-Patterns
 
+## Factory Pattern
+## [ Factory Pattern on YouTube]()
+[![](FactoryPattern.playground/Resources/FactoryPattern.png)]()
+
+
 ## Delegation Pattern
 ## [ Delegation Pattern on YouTube](https://youtu.be/-rZIJxm8B0s)
 [![](DelegationPattern/DelegationPattern/Resources/banner.png)](https://youtu.be/-rZIJxm8B0s)
