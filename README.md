@@ -1,8 +1,8 @@
 # Design-Patterns
 
 ## Factory Pattern
-## [ Factory Pattern on YouTube]()
-[![](FactoryPattern.playground/Resources/FactoryPattern.png)]()
+## [ Factory Pattern on YouTube](https://youtu.be/zZ7Yu2B9N40)
+[![](FactoryPattern.playground/Resources/FactoryPattern.png)](https://youtu.be/zZ7Yu2B9N40)
 
 its one of a <b>Creational Patterns</b> which consist of:
 - <b>Factory:</b> which creates objects.
@@ -11,7 +11,7 @@ its one of a <b>Creational Patterns</b> which consist of:
 
 <h6 align="left">UML Digram's Example:</h6>
 
-[![](FactoryPattern.playground/Resources/FactoryPatternExample.png)]()
+[![](FactoryPattern.playground/Resources/FactoryPatternExample.png)](https://youtu.be/zZ7Yu2B9N40)
 
 ## Delegation Pattern
 ## [ Delegation Pattern on YouTube](https://youtu.be/-rZIJxm8B0s)
