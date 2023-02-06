@@ -13,6 +13,20 @@ its one of a <b>Creational Patterns</b> which consist of:
 
 [![](FactoryPattern.playground/Resources/FactoryPatternExample.png)](https://youtu.be/zZ7Yu2B9N40)
 
+## Builder Pattern
+## [ Builder Pattern on YouTube]()
+[![](BuilderPattern.playground/Resources/builder-pattern-uml.png)]()
+
+its one of the <b>Creational Patterns</b> which consist of:
+- <b>Product:</b> which is a complex object to be created.
+- <b>Builder:</b> accepts step by step inputs and handle the creation of product.
+- <b>Director:</b> accepts inputs and coordinates with the builder.
+
+<h6 align="left">UML Digram's Example:</h6>
+
+[![](BuilderPattern.playground/Resources/builder-example-uml.png)]()
+
+
 ## Delegation Pattern
 ## [ Delegation Pattern on YouTube](https://youtu.be/-rZIJxm8B0s)
 [![](DelegationPattern/DelegationPattern/Resources/banner.png)](https://youtu.be/-rZIJxm8B0s)
