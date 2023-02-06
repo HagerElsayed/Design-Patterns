@@ -6,7 +6,8 @@ import UIKit
  ## Creational Design Pattern
  - - - - - - - - - -
  ![BuilderPattern](builder-pattern-uml.png)
- 
+ - - - - - - - - - -
+ ![BuilderPattern](builder-example-uml.png)
  
  ## Example
  */
