@@ -14,8 +14,8 @@ its one of a <b>Creational Patterns</b> which consist of:
 [![](FactoryPattern.playground/Resources/FactoryPatternExample.png)](https://youtu.be/zZ7Yu2B9N40)
 
 ## Builder Pattern
-## [ Builder Pattern on YouTube]()
-[![](BuilderPattern.playground/Resources/builder-pattern-uml.png)]()
+## [ Builder Pattern on YouTube](https://youtu.be/RhGYeh5d4c4)
+[![](BuilderPattern.playground/Resources/builder-pattern-uml.png)](https://youtu.be/RhGYeh5d4c4)
 
 its one of the <b>Creational Patterns</b> which consist of:
 - <b>Product:</b> which is a complex object to be created.
